@@ -125,7 +125,7 @@ interface WeatherApiService {
     @GET("data/2.5/forecast")
     suspend fun getWeatherForecast(
         @Query("q") city: String,
-        @Query("appid") apiKey: String = "3b7243545df21d609c3c715fbcd2c5a4",
+        @Query("appid") apiKey: String =apiKey2,
         @Query("units") units: String = "metric"
     ): WeatherResponse
 }

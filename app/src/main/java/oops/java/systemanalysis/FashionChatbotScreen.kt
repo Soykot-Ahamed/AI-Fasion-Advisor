@@ -230,7 +230,7 @@ private fun askGemini(query: String, onResult: (String) -> Unit) {
     CoroutineScope(Dispatchers.IO).launch {
         try {
             // Replace with your actual Gemini API key
-            val apiKey = "AIzaSyDohSVlkQv8rhxnWfPkmsSJbID9BQb7UUw"
+            val apiKey = apiKey
             val url = URL("https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=$apiKey")
             val connection = url.openConnection() as HttpURLConnection
             connection.requestMethod = "POST"
